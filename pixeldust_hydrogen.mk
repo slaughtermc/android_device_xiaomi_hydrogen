@@ -17,14 +17,16 @@
 
 $(call inherit-product, device/xiaomi/hydrogen/full_hydrogen.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/pixeldust/config/common_full_phone.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+ 
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := hydrogen
-PRODUCT_NAME := lineage_hydrogen
+PRODUCT_NAME := pixeldust_hydrogen
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Mi Max
 TARGET_VENDOR := Xiaomi
@@ -33,5 +35,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Use the latest approved GMS identifiers unless running a signed build
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="hydrogen-user 7.0 NRD90M V10.1.1.0.NBCMIFI release-keys"
-    BUILD_FINGERPRINT=Xiaomi/hydrogen/hydrogen:7.0/NRD90M/V10.1.1.0.NBCMIFI:user/release-keys
+    PRIVATE_BUILD_DESC="hydrogen-user 7.0 NRD90M V10.1.1.0.NBDMIFI release-keys"
+BUILD_FINGERPRINT=Xiaomi/hydrogen/hydrogen:7.0/NRD90M/V10.1.1.0.NBDMIFI:user/release-keys
