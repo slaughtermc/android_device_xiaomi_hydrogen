@@ -18,7 +18,7 @@
 $(call inherit-product, device/xiaomi/hydrogen/full_hydrogen.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixeldust/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
  
@@ -26,7 +26,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := hydrogen
-PRODUCT_NAME := pixys_hydrogen
+PRODUCT_NAME := pixeldust_hydrogen
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Mi Max
 TARGET_VENDOR := Xiaomi
