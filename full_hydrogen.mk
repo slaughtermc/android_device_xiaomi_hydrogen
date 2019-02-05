@@ -24,7 +24,7 @@ $(call inherit-product, device/xiaomi/hydrogen/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hydrogen
-PRODUCT_NAME := full_hydrogen
+PRODUCT_NAME := pixeldust_hydrogen
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := hydrogen
 PRODUCT_MANUFACTURER := Xiaomi
